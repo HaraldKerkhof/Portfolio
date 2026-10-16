@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Harald Kerkhof</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/huu4nrc.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="contact">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- CONTACT: gegevens links, formulier rechts. Alles verschijnt bij het
+         laden van onder naar boven (js/verschijn.js) -->
+    <section class="contact" data-verschijn-groep>
+      <div class="contact-gegevens">
+        <p class="contact-plaats" data-verschijn>Kortrijk (Belgium)</p>
+        <p class="contact-naam" data-verschijn style="--vertraging:.1s">Harald Kerkhof</p>
+
+        <div class="contact-links">
+          <p class="contact-insta" data-verschijn style="--vertraging:.2s">
+            <a href="https://www.instagram.com/harald.kh" target="_blank">harald.kh</a><br>
+            <a href="https://www.instagram.com/aldharvisio" target="_blank">aldharvisio</a>
+          </p>
+          <p data-verschijn style="--vertraging:.3s"><a class="contact-mail" href="mailto:haraldkerkhof@gmail.com">haraldkerkhof@gmail.com</a></p>
+          <p data-verschijn style="--vertraging:.4s"><a class="contact-mail contact-mail--school" href="mailto:harakerk@student.arteveldehs.be">harakerk@student.arteveldehs.be</a></p>
+        </div>
+      </div>
+
+      <!-- Formulier: verstuurd via FormSubmit (formsubmit.co) naar het gekozen adres.
+           De eerste keer per adres stuurt FormSubmit een bevestigingsmail. -->
+      <form class="formulier" id="contact-formulier" action="https://formsubmit.co/harakerk@student.arteveldehs.be" method="post">
+        <input type="hidden" name="_subject" value="Nieuw bericht via je portfolio">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" class="verborgen" tabindex="-1" autocomplete="off">
+        <label data-verschijn style="--vertraging:.15s"><span>First Name</span> <input type="text" name="voornaam" autocomplete="given-name"></label>
+        <label data-verschijn style="--vertraging:.25s"><span>Last Name</span> <input type="text" name="achternaam" autocomplete="family-name"></label>
+        <label class="vol" data-verschijn style="--vertraging:.35s"><span>E-mail (required)</span> <input type="email" name="email" autocomplete="email" required></label>
+        <label class="vol" data-verschijn style="--vertraging:.45s"><span>Project description</span> <textarea name="bericht" rows="1"></textarea></label>
+        <fieldset class="vol formulier-keuze" data-verschijn style="--vertraging:.5s">
+          <legend>Send to</legend>
+          <label><input type="radio" name="ontvanger" value="harakerk@student.arteveldehs.be" checked> <span>School e-mail</span></label>
+          <label><input type="radio" name="ontvanger" value="haraldkerkhof@gmail.com"> <span>Personal e-mail</span></label>
+        </fieldset>
+        <div class="vol" data-verschijn style="--vertraging:.6s"><button class="knop formulier-knop" type="submit">Send</button></div>
+      </form>
+    </section>
+
+    <!-- Grote titel CONTACT over de volle breedte op een grijze strook -->
+    <section class="contact-titel" data-verschijn-groep>
+      <svg data-verschijn viewBox="0 0 1280 257" role="img" aria-label="Contact" preserveAspectRatio="xMidYMid meet">
+        <text x="28" y="206" textLength="1229" lengthAdjust="spacingAndGlyphs">CONTACT</text>
+      </svg>
+    </section>
+    <div class="streep-blauw streep-blauw--dun"></div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/muis.js"></script>
+  <script src="js/glad-scrollen.js"></script>
+  <script src="js/verschijn.js"></script>
+  <script>
+    // keuze school/persoonlijk: het formulier gaat naar het gekozen adres
+    const contactFormulier = document.getElementById("contact-formulier");
+    contactFormulier?.querySelectorAll('input[name="ontvanger"]').forEach((keuze) =>
+      keuze.addEventListener("change", () => {
+        contactFormulier.action = "https://formsubmit.co/" + keuze.value;
+      })
+    );
+  </script>
+</body>
+</html>

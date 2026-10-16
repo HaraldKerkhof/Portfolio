@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo — Harald Kerkhof</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/huu4nrc.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="portfolio">
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- Deze pagina toont het werk uit de link: project-detail-art.html?echo=003 (zie js/echo.js) -->
+    <section class="echo" id="echo-detail">
+      <div class="echo-balk" data-verschijn-groep>
+        <div class="echo-balk-binnen">
+        <a class="echo-terug" href="portfolio.html#aldharvisio" data-verschijn="links">
+          <svg viewBox="0 0 30 42" aria-hidden="true"><polyline points="24,4 7,21 24,38"/></svg>
+          <span>Back to Aldharvisio</span>
+        </a>
+        <span class="echo-balk-titel" data-echo-titel data-verschijn style="--vertraging:.15s">Echo // 001</span>
+        </div>
+      </div>
+
+      <div class="echo-inhoud" data-verschijn-groep>
+        <div class="echo-beeld" data-verschijn="links">
+          <img decoding="async" id="echo-beeld" src="assets/images/artwork/aldharvisio-echo/echo-001.webp" alt="Echo // 001">
+        </div>
+
+        <div class="echo-info">
+          <div class="echo-info-boven">
+            <p data-verschijn style="--vertraging:.2s"><span class="echo-naam" data-echo-titel>Echo // 001</span><br>Digital illustration<br>2026</p>
+            <p data-verschijn style="--vertraging:.35s">Canvas size: <span data-echo-formaat>A4 (2480 × 3508 px)</span><br>Device: iPad Pro, Apple Pencil Pro</p>
+            <svg class="echo-icoon" viewBox="0 0 125 126" role="img" aria-label="Procreate" data-verschijn style="--vertraging:.5s"><path d="M0 0V126H125V0H0ZM106.69 32.0518C106.68 33.9165 106.246 35.5909 105.803 37.4271C103.641 46.3224 99.1298 54.4662 92.6174 60.8594C89.7388 63.685 86.6147 65.9112 83.1037 67.8425C78.63 70.2971 74.0241 72.1998 69.0501 73.408L53.6941 77.1469L43.095 79.7632C38.1022 80.9905 31.1745 83.8351 27.2482 87.241C24.0014 90.0571 21.5947 93.4915 19.7825 97.4588C19.018 99.1427 18.0648 101.997 16.4886 101.778C15.0823 101.578 15.4693 97.5254 15.6014 96.4218C16.4603 89.7051 17.9326 84.7389 20.9812 78.7357C24.1336 72.5328 28.3525 67.0243 33.6662 62.5338C37.4415 59.3467 41.6037 56.9588 46.1058 54.9799C50.5795 53.0201 55.1382 51.7643 59.9045 50.6607C71.976 47.8636 84.6327 43.611 94.3257 35.5909C98.2237 32.3562 101.15 28.2082 103.037 23.5085C103.556 22.2241 104.094 20.2072 105.199 19.9598C106.492 19.6744 106.765 22.0338 106.756 22.9757L106.69 32.0518Z"/></svg>
+            <p class="echo-software" data-verschijn style="--vertraging:.6s">Software: Procreate</p>
+          </div>
+          <div class="echo-link" data-verschijn style="--vertraging:.75s">
+            <p>LINK</p>
+            <a href="https://www.instagram.com/aldharvisio" target="_blank" rel="noopener">aldharvisio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="echo-streep"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/muis.js"></script>
+  <script src="js/glad-scrollen.js"></script>
+  <script src="js/verschijn.js"></script>
+  <script src="js/vergroot.js"></script>
+  <script src="js/terugkeer.js"></script>
+  <script src="js/echo.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harald Kerkhof — Graphic designer</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/huu4nrc.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="home">
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero hero--home" data-verschijn-groep>
+      <img decoding="async" class="hero-art" data-verschijn data-muis-pixels src="assets/images/hero/home-hero-art.webp" alt="HARALD, hero artwork">
+      <p class="hero-tagline" data-verschijn style="--vertraging:.4s">A designer shaped by fashion, art and a love for detail.</p>
+    </section>
+    <div class="streep-blauw"></div>
+
+    <!-- ABOUT ME -->
+    <!-- Alle maten in cqw = procent van de breedte van .about-home (ontwerp op 1280px = 1000px breed vlak) -->
+    <section class="about-home-sectie" data-verschijn-groep>
+      <div class="about-home">
+        <div class="about-blok-zwart" data-verschijn style="--vertraging:0s"></div>
+        <h2 class="about-woord about-woord--about" data-verschijn style="--vertraging:0.15s">About</h2>
+        <img decoding="async" class="about-foto" data-muis="rood" data-verschijn style="--vertraging:0.3s" src="assets/images/fotos/portret-02-web.jpg" alt="Portret van Harald Kerkhof">
+        <p class="about-tekst about-tekst--rechts" data-verschijn style="--vertraging:0.45s">Raised with a pencil in my hand, I've spent my life discovering new talents from branding to motion, from illustration to fashion. My sense of style defines the way I look at design.</p>
+        <div class="about-knoppen" data-verschijn style="--vertraging:0.6s">
+          <a class="knop knop--rand" href="about.html">See who's behind the work</a>
+          <a class="knop" href="contact.html">Contact</a>
+        </div>
+        <div class="about-blok-blauw" data-verschijn style="--vertraging:0.7s"></div>
+        <h2 class="about-woord about-woord--me" data-verschijn style="--vertraging:0.85s">Me</h2>
+        <p class="about-tekst about-tekst--links" data-verschijn style="--vertraging:1.0s">Every design I make carries a piece of myself. I bring my background, my taste and the way I see the world into each project, so nothing I create feels generic. Behind every piece, you can sense the person who made it.</p>
+      </div>
+    </section>
+
+    <!-- WERK: ALDHARVISIO / DIGITAL WORK
+         Pijl of bolletje = volgende pagina. De titel, tekst en knop wisselen mee
+         met de gegevens (data-...) op elke .slider-pagina. Zie js/slider.js -->
+    <div class="werk-scherm">   <!-- titel + slider samen op één scherm -->
+    <section class="strook-titel">
+      <h2 class="titel-omlijnd wissel-vak" data-slider-titel>
+        <a class="wissel-optie titel-link" data-pagina="0" href="aldharvisio.html">Aldharvisio</a>
+        <a class="wissel-optie titel-link" data-pagina="1" href="portfolio.html">Digital work</a>
+      </h2>
+    </section>
+    <section class="aldharvisio-home" data-slider-sectie>
+      <div class="slider">
+        <button class="slider-pijl slider-pijl--vorige" aria-label="Vorige" data-vorige>&#x2329;</button>
+        <div class="slider-venster">
+          <div class="slider-baan">
+            <div class="slider-pagina" data-titel="Aldharvisio" data-link="aldharvisio.html">
+              <a class="slider-kaart" data-naam="Echo // 001" href="project-detail-art.html?echo=001"><img decoding="async" src="assets/images/artwork/aldharvisio-echo/echo-001.webp" alt="Echo 001" loading="lazy"></a>
+              <a class="slider-kaart" data-naam="Echo // 002" href="project-detail-art.html?echo=002"><img decoding="async" src="assets/images/artwork/aldharvisio-echo/echo-002.webp" alt="Echo 002" loading="lazy"></a>
+              <a class="slider-kaart" data-naam="Echo // 003" href="project-detail-art.html?echo=003"><img decoding="async" src="assets/images/artwork/aldharvisio-echo/echo-003.webp" alt="Echo 003" loading="lazy"></a>
+              <a class="slider-kaart" data-naam="Echo // 004" href="project-detail-art.html?echo=004"><img decoding="async" src="assets/images/artwork/aldharvisio-echo/echo-004.webp" alt="Echo 004" loading="lazy"></a>
+            </div>
+            <!-- Digital work: één kaart per project, beeld vult het hele kader (.slider-kaart--vol) -->
+            <div class="slider-pagina" data-titel="Digital work" data-link="portfolio.html">
+              <a class="slider-kaart slider-kaart--vol" data-naam="Euro banknote series" href="project-eurobiljetten.html"><img decoding="async" src="assets/images/digital-work/eurobiljetten/eurobiljet-050-achterkant.webp" alt="Euro banknote series, back of the 50 euro note" loading="lazy"></a>
+              <a class="slider-kaart slider-kaart--vol" data-naam="Chris Schoenherstel" href="project-chris-schoenherstel.html"><img decoding="async" src="assets/images/digital-work/chris-schoenherstel/cs-stoepbord.webp" alt="Chris Schoenherstel, sidewalk sign with the logo" loading="lazy"></a>
+              <a class="slider-kaart slider-kaart--vol" data-naam="Nobody New" href="project-the-marias-nobody-new.html"><img decoding="async" src="assets/images/digital-work/the-marias-nobody-new/marias-still-05-respirar.webp" alt="Nobody New, still from the lyric video" loading="lazy"></a>
+              <a class="slider-kaart slider-kaart--vol" data-naam="Dreaming in Westwood" href="project-vivienne-westwood.html"><img decoding="async" src="assets/images/digital-work/vivienne-westwood/vw-blauw-02-parelsnoeren.webp" alt="Dreaming in Westwood, Vivienne Westwood pearl necklaces on blue" loading="lazy"></a>
+            </div>
+          </div>
+        </div>
+        <button class="slider-pijl slider-pijl--volgende" aria-label="Volgende" data-volgende>&#x232A;</button>
+      </div>
+
+      <div class="aldharvisio-tekst wissel-vak" data-slider-tekst>
+        <div class="wissel-optie" data-pagina="0">
+          <p>Where lines move, and patterns breathe depth. A style built from gothic filigree tribal detailing, neo-tribal ornamental structures, and organic tribal linework pushed through a cyber lens.</p>
+          <p>I'm drawn to it because I see movement in the density and depth in the layering: identity expressed through rhythm, not just shape.</p>
+        </div>
+        <div class="wissel-optie" data-pagina="1">
+          <p>Where ideas become brands, screens and motion. A banknote series, a full brand identity, my first lyric video and a jewellery shoot.</p>
+          <p>Every project starts from one concept and gets its own visual language, so each piece feels made for its story.</p>
+        </div>
+      </div>
+      <a class="knop knop--rand knop--breed" href="aldharvisio.html" data-slider-knop>View more work</a>
+      <div class="slider-bolletjes" data-bolletjes></div>
+    </section>
+    </div>
+
+    <!-- BEELDSTROOK -->
+    <section class="beeldstrook" data-verschijn-groep>
+      <img decoding="async" src="assets/images/beelden/ogen-strook-volledig.webp" alt="" style="width:100%" data-verschijn data-muis-pixels>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/muis.js"></script>
+  <script src="js/glad-scrollen.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/verschijn.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me — Harald Kerkhof</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/huu4nrc.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="about">
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- HERO: zelfde opbouw als de home page -->
+    <section class="hero hero--home hero--about" data-verschijn-groep>
+      <img decoding="async" class="hero-art" data-verschijn data-muis-pixels src="assets/images/hero/about-hero-art.webp" alt="ABOUT ME, hero artwork">
+      <p class="hero-tagline" data-verschijn style="--vertraging:.4s">A designer shaped by fashion, art and a love for detail.</p>
+    </section>
+    <div class="streep-blauw"></div>
+
+    <!-- INTRO: tekst links, foto rechts. Bij het scrollen schuift de tekst
+         van links en de foto van rechts in beeld (js/verschijn.js) -->
+    <section class="about-intro" data-verschijn-groep="herhaal">
+      <div class="about-intro-tekst" data-verschijn="links">
+        <p class="tekst-zwart">I'm Harald, a graphic design student in Ghent with a habit of turning ideas into something visual. Whether that's a brand, a layout, or a website.</p>
+        <p class="tekst-zwart">Fashion, illustration and design have shaped how I see things since I was a kid, and that still drives everything I make.</p>
+
+        <h3>Education</h3>
+        <p><span class="school">Graduaat Grafische Vormgeving — Arteveldehogeschool Gent (2025 — present)</span><br>
+        <em>Branding, UI/UX, publication design, motion and photography.</em></p>
+        <p><span class="school">Kunsthumaniora Brugge (2022 — 2025)</span><br>
+        <em>Design, expo, drawing, graphic design, painting and fashion.</em></p>
+      </div>
+      <img decoding="async" class="about-intro-foto" data-verschijn="rechts" style="--vertraging:.15s" src="assets/images/fotos/portret-01.webp" alt="Portret van Harald Kerkhof">
+    </section>
+
+    <!-- ERVARING: zwarte sectie, tekst wisselt links/rechts, banner ertussen.
+         Elk blok komt omhoog in beeld bij het scrollen (js/verschijn.js) -->
+    <div class="streep-blauw"></div>
+    <section class="about-ervaring">
+      <!-- BANNER-WISSEL (js/banner.js): eerst staat de banner bovenaan met de
+           ervaring eronder. Het blok blijft even staan; bij verder scrollen schuift
+           de banner naar onder, verdwijnt de ervaring en verschijnt de volgende
+           tekst erboven. Op smalle schermen staat alles gewoon onder elkaar. -->
+      <div class="ervaring-pin"><div class="ervaring-podium">
+        <div class="ervaring-laag ervaring-laag--a">
+          <div class="ervaring-blok ervaring-blok--links" data-verschijn-groep>
+            <p data-verschijn><strong>Sales Assistant — New Yorker (Kortrijk &amp; Brugge, age 16–18)</strong><br>
+            Two years of retail work taught me how to read people fast, stay calm under pressure, and actually listen to what someone needs: skills that turned out to be just as useful in design as they were behind a till.</p>
+          </div>
+          <div class="ervaring-blok ervaring-blok--rechts" data-verschijn-groep>
+            <p data-verschijn><strong>Fashion Intern — Cadastre Ewquis Couture (Brugge)</strong><br>
+            A hands-on internship with a designer specialized in historical costumes and corsetry. It was my first real look at how fashion gets made from the inside: precision, craftsmanship, and a lot of patience. It's part of why I still see fashion and design as connected, not separate worlds.</p>
+          </div>
+        </div>
+
+        <div class="ervaring-banner">
+          <img decoding="async" data-muis-pixels src="assets/images/beelden/about-banner-art.webp" alt="">
+        </div>
+
+        <div class="ervaring-laag ervaring-laag--b">
+          <div class="ervaring-blok ervaring-blok--links ervaring-blok--breed">
+            <p>I've always had more ideas than time to make them. Design became the way to actually finish what's in my head, whether it's a brand that needs a voice, a layout that needs to breathe, or a piece of personal art that doesn't need to explain itself. I care about the details most people miss, and I'd rather spend an extra hour getting something right than ship it half-finished.</p>
+          </div>
+          <div class="ervaring-blok ervaring-blok--rechts ervaring-blok--smal">
+            <p>I'm currently looking for an internship where I can keep growing, especially somewhere that values both structure and style. If that sounds like your team, let's talk.</p>
+            <p class="ervaring-knoppen">
+              <a class="knop" href="contact.html">Contact</a>
+              <a class="knop knop--rand" href="assets/cv/cv-harald-kerkhof-creatief.pdf" target="_blank">Download CV</a>
+            </p>
+          </div>
+        </div>
+      </div></div>
+
+      <div class="ervaring-programmas" data-verschijn-groep>
+        <h3 data-verschijn>Programs I work with</h3>
+      </div>
+      <div class="iconen ervaring-iconen" data-verschijn-groep>
+        <figure class="programma">
+          <img decoding="async" data-verschijn style="--vertraging:0.00s" src="assets/icons/icon-photoshop.svg" alt="Photoshop">
+          <figcaption data-verschijn style="--vertraging:1.20s">Adobe Photoshop</figcaption>
+        </figure>
+        <figure class="programma">
+          <img decoding="async" data-verschijn style="--vertraging:0.15s" src="assets/icons/icon-illustrator.svg" alt="Illustrator">
+          <figcaption data-verschijn style="--vertraging:1.35s">Adobe Illustrator</figcaption>
+        </figure>
+        <figure class="programma">
+          <img decoding="async" data-verschijn style="--vertraging:0.30s" src="assets/icons/icon-indesign.svg" alt="InDesign">
+          <figcaption data-verschijn style="--vertraging:1.50s">Adobe InDesign</figcaption>
+        </figure>
+        <figure class="programma">
+          <img decoding="async" data-verschijn style="--vertraging:0.45s" src="assets/icons/icon-after-effects.svg" alt="After Effects">
+          <figcaption data-verschijn style="--vertraging:1.65s">Adobe After Effects</figcaption>
+        </figure>
+        <figure class="programma">
+          <img decoding="async" data-verschijn style="--vertraging:0.60s" src="assets/icons/icon-lightroom.svg" alt="Lightroom">
+          <figcaption data-verschijn style="--vertraging:1.80s">Adobe Lightroom</figcaption>
+        </figure>
+        <figure class="programma">
+          <img decoding="async" data-verschijn style="--vertraging:0.75s" src="assets/icons/icon-figma.svg" alt="Figma">
+          <figcaption data-verschijn style="--vertraging:1.95s">Figma</figcaption>
+        </figure>
+        <figure class="programma">
+          <img decoding="async" data-verschijn style="--vertraging:0.90s" src="assets/icons/icon-webflow.svg" alt="Webflow">
+          <figcaption data-verschijn style="--vertraging:2.10s">Webflow</figcaption>
+        </figure>
+        <figure class="programma">
+          <img decoding="async" data-verschijn style="--vertraging:1.05s" src="assets/icons/icon-procreate.svg" alt="Procreate">
+          <figcaption data-verschijn style="--vertraging:2.25s">Procreate</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/muis.js"></script>
+  <script src="js/glad-scrollen.js"></script>
+  <script src="js/verschijn.js"></script>
+  <script src="js/banner.js"></script>
+</body>
+</html>
