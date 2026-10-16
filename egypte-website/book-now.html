@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nefertari book nu</title>
+    <meta name="description" content="Nefertari Travel: jouw reis naar het land van de farao's begint hier.">
+    <link rel="stylesheet" href="https://use.typekit.net/ifg3zxk.css">
+    <!-- reserve als de Adobe Fonts-kit niet laadt: Cinzel en Montserrat -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+</head>
+
+<body>
+
+    <!-- hero book nu—-------------------------------------------------------------------------------------------------------------------- -->
+
+    <section class="hero-book-now">
+
+        <header class="navbar">
+            <div class="navbar__left">
+                <a href="index.html" class="navbar__logo">
+                    <img src="assets/logo/nefertari-travel-logo.svg" alt="Nefertari Travel logo">
+                    <nav class="navbar__links">
+                        <a href="index.html">Home</a>
+                        <a href="destination.html">Bestemmingen</a>
+                    </nav>
+            </div>
+
+            <a href="book-now.html" class="button_nav">Boek nu</a>
+        </header>
+
+        <div class="hero__title_book">
+            <h2>Boek jouw reis naar</h2>
+            <h1>EGYPTE</h1>
+        </div>
+
+        <div class="hero__bar">
+            <p>Vul het formulier in en ons team stelt een reis op maat voor je samen, volledig afgestemd op jouw wensen,
+                budget en reisdata. Geen verborgen kosten, geen stress, gewoon een reis om naar uit te kijken.</p>
+        </div>
+
+    </section>
+
+
+    <!--BOOKING FORM SECTION ------------------------------------------------------------------------------------------------------->
+
+    <section class="booking-form-section">
+
+        <form id="booking-form" class="booking-form reveal" novalidate>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="bf-naam">Naam <span class="form-field__required">verplicht</span></label>
+                    <input type="text" id="bf-naam" name="naam" required>
+                </div>
+                <div class="form-field">
+                    <label for="bf-voornaam">Voornaam <span class="form-field__required">verplicht</span></label>
+                    <input type="text" id="bf-voornaam" name="voornaam" required>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="bf-email">E-mail <span class="form-field__required">verplicht</span></label>
+                <input type="email" id="bf-email" name="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="bf-tel-2">Telefoonnummer <span class="form-field__optional">optioneel</span></label>
+                <input type="tel" id="bf-tel-2" name="telefoon2">
+            </div>
+
+            <div class="form-row">
+                <div class="form-field form-field--select">
+                    <label for="bf-bestemming">Bestemming</label>
+                    <select id="bf-bestemming" name="bestemming" required>
+                        <option value="">Kies...</option>
+                        <option value="cairo">Caïro</option>
+                        <option value="luxor">Luxor</option>
+                        <option value="hurghada">Hurghada</option>
+                        <option value="aswan">Aswan</option>
+                        <option value="nijlcruise">Nijlcruise</option>
+                    </select>
+                </div>
+                <div class="form-field form-field--select">
+                    <label for="bf-periode">Reisperiode</label>
+                    <select id="bf-periode" name="reisperiode" required>
+                        <option value="">Kies...</option>
+                        <option value="lente">Maart - Mei</option>
+                        <option value="zomer">Juni - Augustus</option>
+                        <option value="herfst">September - November</option>
+                        <option value="winter">December - Februari</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="bf-opmerkingen">Extra opmerkingen <span
+                        class="form-field__optional">optioneel</span></label>
+                <input type="text" id="bf-opmerkingen" name="opmerkingen">
+            </div>
+
+            <button type="submit" class="button button--sand">Verstuur aanvraag</button>
+            <p class="form-status"></p>
+
+        </form>
+
+    </section>
+
+    <!-- pricing —-------------------------------------------------------------------------------------------------------------------- -->
+
+    <section class="pricing">
+
+        <div class="pricing__topbar"></div>
+
+        <div class="pricing__header">
+            <h2 class="reveal">Kies jouw budget</h2>
+            <p class="reveal">Van een korte citytrip naar Caïro tot een volledige rondreis, er is een pakket voor
+                iedereen.</p>
+        </div>
+
+        <div class="pricing__grid">
+
+            <div class="price-card reveal">
+                <p class="price-card__tag">Ontdek de hoofdstad</p>
+                <h3 class="price-card__title">Citytrip Caïro</h3>
+                <img src="assets/logo/nefertari-travel-logo.svg" alt="" class="price-card__logo">
+                <p class="price-card__amount">€399<span>p.p.</span></p>
+                <p class="price-card__meta">7 dagen | All-in resort, snorkelen, strand</p>
+            </div>
+
+            <div class="price-card reveal">
+                <p class="price-card__tag">Kom tot rust</p>
+                <h3 class="price-card__title">Rode Zee Ontspanning</h3>
+                <img src="assets/logo/nefertari-travel-logo.svg" alt="" class="price-card__logo">
+                <p class="price-card__amount">€599<span>p.p.</span></p>
+                <p class="price-card__meta">7 dagen | All-in resort, snorkelen, strand</p>
+            </div>
+
+            <div class="price-card reveal">
+                <p class="price-card__tag">Zie heel Egypte</p>
+                <h3 class="price-card__title">Complete Rondreis</h3>
+                <img src="assets/logo/nefertari-travel-logo.svg" alt="" class="price-card__logo">
+                <p class="price-card__amount">€899<span>p.p.</span></p>
+                <p class="price-card__meta">7 dagen | All-in resort, snorkelen, strand</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- FOOTER —-------------------------------------------------------------------------------------------------------------------- -->
+
+    <footer class="site-footer">
+
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="destination.html">Bestemmingen</a>
+            <a href="book-now.html">Boek nu</a>
+        </nav>
+
+        <div class="footer-main">
+
+            <div class="footer-main__brand">
+                <img src="assets/logo/nefertari-travel-logo-voluit.svg" alt="Nefertari Travel logo" class="footer-main__logo">
+                <p class="footer-main__tagline">Jouw reis naar het land van de farao's begint hier.</p>
+            </div>
+
+            <div class="footer-main__grid">
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><img src="assets/iconen/telefoon.svg" alt="" class="icon"> +32 9 123 45 67</p>
+                    <p><img src="assets/iconen/mail.svg" alt="" class="icon"> info@nefertaritravel.be</p>
+                    <p><img src="assets/iconen/locatie.svg" alt="" class="icon"> Gent, België en Caïro, Egypte</p>
+                </div>
+
+                <div class="footer-col footer-col--center">
+                    <img src="assets/iconen/egypte-arabisch.png" alt="Nefertari Travel logo" class="footer-arabic-egypte">
+                </div>
+
+                <div class="footer-col footer-col--right">
+                    <h4>Volg ons</h4>
+                    <p><img src="assets/iconen/instagram.svg" alt="" class="icon">NefertariTravelBE </p>
+                    <p><img src="assets/iconen/facebook.svg" alt="" class="icon"> Nefertari.Travel.Belgium</p>
+                    <p><img src="assets/iconen/pinterest.svg" alt="" class="icon"> PinNefertari</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="footer-year">2026</span> Nefertari Travel. Alle rechten voorbehouden.</p>
+        </div>
+
+    </footer>
+
+
+    <!--java cript link---------------------------------------------------------------------------------------------------------------->
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

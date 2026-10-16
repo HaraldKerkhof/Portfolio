@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nefertari Travel — Harald Kerkhof</title>
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/huu4nrc.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="portfolio">
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- Detailpagina digital work: Nefertari Travel, een reiswebsite over Egypte.
+         Eindopdracht JavaScript (DVG1-F), zelf geschreven in HTML, CSS en JavaScript.
+         Bronbestanden: 05-digital-work/egypte-website (website-code, logo, moodboard, figma-link).
+         De werkende site zelf staat in de map egypte-website/ en is hier live te zien
+         in browservensters (iframes). Beweeg over een venster en de pagina scrolt mee
+         (js/egypte-website.js). De foto's van de site komen van Pexels.
+         Eigen verdeling: titel in het midden met de homepage over de hele breedte,
+         het idee in drie kolommen, de twee andere pagina's naast elkaar, vijf
+         bestemmingen met wisselende foto's, de JavaScript-interacties, logo en kleuren. -->
+    <section class="echo">
+      <div class="echo-balk dw-balk" data-verschijn-groep>
+        <div class="echo-balk-binnen">
+          <a class="echo-terug" href="portfolio.html" data-verschijn="links">
+            <svg viewBox="0 0 30 42" aria-hidden="true"><polyline points="24,4 7,21 24,38"/></svg>
+            <span>Back to digital work</span>
+          </a>
+          <span class="echo-balk-titel" data-verschijn style="--vertraging:.15s">Nefertari Travel</span>
+        </div>
+      </div>
+
+      <div class="dw-detail-inhoud egy">
+
+        <!-- OPENING: titel gecentreerd, daaronder de homepage live in een browservenster -->
+        <section class="egy-opening" data-verschijn-groep>
+          <div class="egy-opening-kop">
+            <p class="dw-label" data-verschijn>Web design &amp; JavaScript</p>
+            <h2 data-verschijn style="--vertraging:.1s">Nefertari Travel</h2>
+            <p class="dw-meta" data-verschijn style="--vertraging:.2s">A travel website about Egypt, built by hand in HTML, CSS and JavaScript</p>
+          </div>
+
+          <div class="egy-venster egy-venster--groot" data-verschijn style="--vertraging:.3s">
+            <div class="egy-venster-balk" aria-hidden="true"><i></i><i></i><i></i><span>nefertari-travel / home</span></div>
+            <div class="egy-scherm">
+              <iframe src="egypte-website/index.html" title="Nefertari Travel, home page (live)" loading="lazy" tabindex="-1" scrolling="no"></iframe>
+            </div>
+            <a class="egy-venster-link" href="egypte-website/index.html" target="_blank" rel="noopener" aria-label="Open the home page of Nefertari Travel in a new tab"></a>
+          </div>
+          <p class="dw-onderschrift egy-tip" data-verschijn>The real site, live. Hover over the window to scroll through the page, click to open it.</p>
+
+          <div class="egy-opening-tekst">
+            <div data-verschijn>
+              <p>For my final JavaScript assignment I had to build an interactive website around one theme: holidays. I chose Egypt and invented a travel agency to go with it, Nefertari Travel, named after Queen Nefertari, the great royal wife of Ramses II.</p>
+              <p>I designed the pages in Figma, drew the logo in Illustrator and then wrote the whole site myself in HTML, CSS and JavaScript, without templates or frameworks.</p>
+            </div>
+            <div data-verschijn style="--vertraging:.15s">
+              <p class="egy-let-op">School assignment. Nefertari Travel is a made-up travel agency: the prices, reviews and contact details are fictional. All photos on the site come from Pexels and are free to use.</p>
+              <a class="knop" href="egypte-website/index.html" target="_blank" rel="noopener">Visit the website</a>
+              <div class="dw-software">
+                <img decoding="async" src="assets/icons/icon-html-css.svg" alt="HTML and CSS">
+                <img decoding="async" src="assets/icons/icon-javascript.svg" alt="JavaScript">
+                <img decoding="async" src="assets/icons/icon-figma.svg" alt="Figma">
+                <img decoding="async" src="assets/icons/icon-illustrator.svg" alt="Illustrator">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- HET IDEE in drie korte kolommen -->
+        <section class="dw-concept" data-verschijn-groep>
+          <div data-verschijn>
+            <h3>History, sun and adventure</h3>
+            <p>Egypt is three holidays in one: the pyramids and temples, the beaches of the Red Sea and the silence of the desert. The home page tells that story in the same order, from the past to the sea to a camel ride at sunset, so you want to go before you even reach the prices.</p>
+          </div>
+          <div data-verschijn style="--vertraging:.15s">
+            <h3>Gold, cream and royal blue</h3>
+            <p>The colours come straight from my moodboard: the warm gold of the sand, a soft cream like papyrus and a deep blue taken from the lapis lazuli of the pharaohs. The titles are set in a classic, wide serif with lots of air, the text in a calm sans serif.</p>
+          </div>
+          <div data-verschijn style="--vertraging:.3s">
+            <h3>Written line by line</h3>
+            <p>Every page, every grid and every animation is my own code. I kept the JavaScript small and readable: a handful of functions that each do one thing, like letting the hero appear, fading photos in while you scroll or swapping the photos of a destination.</p>
+          </div>
+        </section>
+
+        <!-- DE ANDERE TWEE PAGINA'S naast elkaar, de tweede iets lager -->
+        <section class="egy-paginas" data-verschijn-groep>
+          <div class="egy-kop" data-verschijn>
+            <p class="dw-label">Three pages</p>
+            <h2>From dreaming to booking</h2>
+            <p>Home makes you want to go, Destinations helps you choose and Book now lets you plan the trip. The same header, buttons and footer return on every page, so it always feels like one journey.</p>
+          </div>
+          <div class="egy-paginas-rij">
+            <figure class="egy-pagina" data-verschijn="links">
+              <div class="egy-venster">
+                <div class="egy-venster-balk" aria-hidden="true"><i></i><i></i><i></i><span>nefertari-travel / destinations</span></div>
+                <div class="egy-scherm">
+                  <iframe src="egypte-website/destination.html" title="Nefertari Travel, destinations page (live)" loading="lazy" tabindex="-1" scrolling="no"></iframe>
+                </div>
+                <a class="egy-venster-link" href="egypte-website/destination.html" target="_blank" rel="noopener" aria-label="Open the destinations page in a new tab"></a>
+              </div>
+              <figcaption>
+                <h3>Destinations</h3>
+                <p>Five places you have to see, city by city. Text and photos switch sides on every row, and the photos of each place change by themselves.</p>
+              </figcaption>
+            </figure>
+            <figure class="egy-pagina" data-verschijn="rechts" style="--vertraging:.15s">
+              <div class="egy-venster">
+                <div class="egy-venster-balk" aria-hidden="true"><i></i><i></i><i></i><span>nefertari-travel / book now</span></div>
+                <div class="egy-scherm">
+                  <iframe src="egypte-website/book-now.html" title="Nefertari Travel, booking page (live)" loading="lazy" tabindex="-1" scrolling="no"></iframe>
+                </div>
+                <a class="egy-venster-link" href="egypte-website/book-now.html" target="_blank" rel="noopener" aria-label="Open the booking page in a new tab"></a>
+              </div>
+              <figcaption>
+                <h3>Book now</h3>
+                <p>A short booking form with your destination and travel period, followed by the three travel packages, from a city trip to Cairo to a full tour of Egypt.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- VIJF BESTEMMINGEN: per plek wisselen de vier foto's, zoals op de site zelf -->
+        <section class="egy-plekken" data-verschijn-groep>
+          <div class="egy-kop egy-kop--rechts" data-verschijn>
+            <p class="dw-label">Five destinations</p>
+            <h2>Places you have to see</h2>
+            <p>Every destination got four photos and its own short story. On the site the photos fade into each other one by one, just like here. Click a photo to see it bigger.</p>
+          </div>
+          <div class="egy-plekken-rij">
+            <figure class="egy-plek" data-verschijn>
+              <div class="egy-wissel egy-zoom">
+                <img decoding="async" class="actief" src="assets/images/digital-work/egypte-website/egy-cairo-1.webp" alt="Cairo: minarets with the name Cairo on a black map of Egypt" width="760" height="987">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-cairo-2.webp" alt="A busy street in Islamic Cairo" width="760" height="987">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-cairo-3.webp" alt="A lamp shop in the bazaar" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-cairo-4.webp" alt="An antiques shop in Khan el-Khalili" width="756" height="982">
+              </div>
+              <figcaption><h3>Cairo</h3><p>The bustling capital</p></figcaption>
+            </figure>
+            <figure class="egy-plek" data-verschijn style="--vertraging:.1s">
+              <div class="egy-wissel egy-zoom">
+                <img decoding="async" class="actief" src="assets/images/digital-work/egypte-website/egy-luxor-1.webp" alt="A painted royal tomb in the Valley of the Kings" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-luxor-2.webp" alt="The columns of the Karnak temple" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-luxor-3.webp" alt="A traveller in a temple gate full of hieroglyphs" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-luxor-4.webp" alt="View over the Nile at sunset" width="756" height="982">
+              </div>
+              <figcaption><h3>Luxor</h3><p>The world's largest open-air museum</p></figcaption>
+            </figure>
+            <figure class="egy-plek" data-verschijn style="--vertraging:.2s">
+              <div class="egy-wissel egy-zoom">
+                <img decoding="async" class="actief" src="assets/images/digital-work/egypte-website/egy-hurghada-1.webp" alt="The coast of Hurghada from above" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-hurghada-2.webp" alt="A hammock between palm trees at sunset" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-hurghada-3.webp" alt="Hot air balloons in the morning sky" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-hurghada-4.webp" alt="Clear blue water along the Red Sea" width="756" height="982">
+              </div>
+              <figcaption><h3>Hurghada</h3><p>Sun, sea and coral reefs</p></figcaption>
+            </figure>
+            <figure class="egy-plek" data-verschijn style="--vertraging:.3s">
+              <div class="egy-wissel egy-zoom">
+                <img decoding="async" class="actief" src="assets/images/digital-work/egypte-website/egy-aswan-1.webp" alt="A felucca sailing boat on the Nile" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-aswan-2.webp" alt="A weaver at his loom" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-aswan-3.webp" alt="A temple on the water" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-aswan-4.webp" alt="A felucca at sunset" width="756" height="982">
+              </div>
+              <figcaption><h3>Aswan</h3><p>Calm at the edge of the desert</p></figcaption>
+            </figure>
+            <figure class="egy-plek" data-verschijn style="--vertraging:.4s">
+              <div class="egy-wissel egy-zoom">
+                <img decoding="async" class="actief" src="assets/images/digital-work/egypte-website/egy-nijlcruise-1.webp" alt="A cruise ship on the Nile in front of a pyramid" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-nijlcruise-2.webp" alt="Pelicans in front of the temple of Abu Simbel" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-nijlcruise-3.webp" alt="The temple of Abu Simbel by the water" width="756" height="982">
+                <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-nijlcruise-4.webp" alt="A cruise ship and a felucca on the Nile" width="756" height="982">
+              </div>
+              <figcaption><h3>Nile cruise</h3><p>Egypt seen from the water</p></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- JAVASCRIPT: kop links (blijft staan), de vier interacties rechts -->
+        <section class="egy-js" data-verschijn-groep>
+          <div class="egy-js-kop" data-verschijn>
+            <p class="dw-label">JavaScript</p>
+            <h2>Four small interactions</h2>
+            <p>The assignment was about JavaScript, so I gave the site movement that supports the feeling of travelling without getting in the way. Each interaction is its own small function in one file.</p>
+          </div>
+          <ol class="egy-js-lijst">
+            <li data-verschijn>
+              <span class="egy-js-nr">01</span>
+              <div>
+                <h3>The hero rises</h3>
+                <p>When a page opens, the desert appears first. A moment later the title rises into view, followed by the two cards, one after the other.</p>
+                <code>setTimeout(() =&gt; heroTitle.classList.remove('js-hidden'), 300);</code>
+              </div>
+            </li>
+            <li data-verschijn>
+              <span class="egy-js-nr">02</span>
+              <div>
+                <h3>Fading in while you scroll</h3>
+                <p>Text and photos fade in as soon as they enter the screen, and fade out again when they leave it, whether you scroll down or back up.</p>
+                <code>entry.isIntersecting ? add('is-visible') : remove('is-visible')</code>
+              </div>
+            </li>
+            <li data-verschijn>
+              <span class="egy-js-nr">03</span>
+              <div>
+                <h3>Photos that wipe open</h3>
+                <p>Under "Sun &amp; relaxation" and "Adventure" the photos open from left to right. How far they are open depends exactly on how far you have scrolled.</p>
+                <code>img.style.clipPath = `inset(0 ${100 - reveal}% 0 0)`;</code>
+              </div>
+            </li>
+            <li data-verschijn>
+              <span class="egy-js-nr">04</span>
+              <div>
+                <h3>A slideshow per destination</h3>
+                <p>Every five seconds the next photo of a destination fades in. When the last one is reached, it starts again at the first.</p>
+                <code>currentIndex = (currentIndex + 1) % items.length;</code>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- LOGO EN KLEUREN -->
+        <section class="egy-merk" data-verschijn-groep>
+          <div class="egy-merk-logo" data-verschijn="links">
+            <img decoding="async" src="assets/images/digital-work/egypte-website/egy-logo-voluit.svg" alt="Nefertari Travel logo in blue and gold" width="145" height="129">
+          </div>
+          <div class="egy-merk-tekst">
+            <p class="dw-label" data-verschijn>Logo &amp; colours</p>
+            <h2 data-verschijn style="--vertraging:.1s">A queen in a few shapes</h2>
+            <p data-verschijn style="--vertraging:.2s">The logo is an Egyptian queen, reduced to a handful of sharp shapes in blue and gold. I first tried it out in red and black, then chose the colours of the moodboard. The same shape comes back as a thin gold line drawing over the desert in the hero.</p>
+            <ul class="egy-kleuren" data-verschijn style="--vertraging:.3s">
+              <li style="--kleur:#0d3fdb"><span>Royal blue</span>#0D3FDB</li>
+              <li style="--kleur:#0057ff"><span>Lapis</span>#0057FF</li>
+              <li style="--kleur:#e2b560"><span>Desert gold</span>#E2B560</li>
+              <li style="--kleur:#f9e2b3"><span>Papyrus</span>#F9E2B3</li>
+              <li style="--kleur:#14181f"><span>Night</span>#14181F</li>
+            </ul>
+          </div>
+          <figure class="egy-merk-schetsen egy-zoom" data-verschijn>
+            <img decoding="async" loading="lazy" src="assets/images/digital-work/egypte-website/egy-logo-schetsen.svg" alt="Early versions of the logo in red and black" width="842" height="595">
+            <figcaption class="dw-onderschrift">First versions of the logo</figcaption>
+          </figure>
+        </section>
+
+        <!-- SLOT: de slogan van de site + knop -->
+        <section class="egy-einde" data-verschijn-groep>
+          <p class="egy-einde-zin" data-verschijn>Your journey to the land<br>of the pharaohs starts here.</p>
+          <a class="knop" href="egypte-website/index.html" target="_blank" rel="noopener" data-verschijn style="--vertraging:.15s">Visit the website</a>
+          <p class="egy-bron" data-verschijn style="--vertraging:.25s">Photos: <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>, free to use under the Pexels licence. The old engravings of the Sphinx and the Colossi of Memnon are 19th-century prints in the public domain. Best viewed on a computer.</p>
+        </section>
+
+      </div>
+
+      <div class="echo-streep"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/muis.js"></script>
+  <script src="js/glad-scrollen.js"></script>
+  <script src="js/verschijn.js"></script>
+  <script src="js/vergroot.js"></script>
+  <script src="js/egypte-website.js"></script>
+  <script src="js/terugkeer.js"></script>
+</body>
+</html>

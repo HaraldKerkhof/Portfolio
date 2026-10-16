@@ -5,11 +5,12 @@
    Sluiten: klik ergens, het kruisje of Escape.
    Werkt op project-detail-art.html, project-eurobiljetten.html,
    project-vivienne-westwood.html, project-the-marias-nobody-new.html
-   project-chris-schoenherstel.html en project-yakskusha.html.
+   project-chris-schoenherstel.html, project-yakskusha.html en
+   project-egypte-website.html.
    ========================================================== */
 
 (() => {
-  const fotos = document.querySelectorAll(".echo-beeld img, .dw-reeks img, .dw-biljet-beelden img, .vw-foto img, .vw-intro-beelden img, .mn-frame img, .mn-moodboard-beeld img, .cs-zoom img, .yak-zoom img");
+  const fotos = document.querySelectorAll(".echo-beeld img, .dw-reeks img, .dw-biljet-beelden img, .vw-foto img, .vw-intro-beelden img, .mn-frame img, .mn-moodboard-beeld img, .cs-zoom img, .yak-zoom img, .egy-zoom img");
   if (!fotos.length) return;
 
   const laag = document.createElement("div");
